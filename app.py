@@ -18,7 +18,7 @@ twilio_client = Client(
 )
 
 # Initialize OpenAI
-openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = os.getenv('OPENAI_API_KEY')  # unnecessary if the api key is set in the .env file
 
 def get_openai_response(message):
     """Get response from OpenAI API"""
